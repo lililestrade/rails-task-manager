@@ -1,0 +1,16 @@
+<div class="card-white-list">
+  <h1>ALL TASKS</h1>
+
+  <p><%= link_to 'Create a new task', tasks_new_path %></p>
+
+  <% @tasks.each do |task| %>
+  <div>
+    <input type="checkbox" class="tasks" name="<% task.title %>" <%= task.completed ? "checked" : "" %>>
+    <label for="<% task.title %>"><%= link_to task.title, task_path(task) %></label>
+    <%= link_to "⚰️", delete_path(task),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+  </div>
+  <% end %>
+
+</div>

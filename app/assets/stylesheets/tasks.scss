@@ -1,3 +1,49 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  /* background-color: rgb(250, 250, 250);*/
+  background-color: #F8F8F8; //#E6BEAE
+  color: #1E1E24;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  // font-family: 'Playfair Display', serif;
+}
+
+.card-white-list {
+  background-color: white; //#F7F1EF
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  align-item: center;
+  margin: auto;
+}
+
+h1 {
+  font-weight: lighter;
+}
+h2 {
+  font-weight: lighter;
+}
+
+.details {
+  background-color: #E8E8E8; //#F5F5F5
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #D3D3D3 ;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  align-item: center;
+  margin: auto;
+}
+
+.redirect {
+  margin-top: 20px;
+}
+
+.completed {
+  margin-top: 20px;
+}

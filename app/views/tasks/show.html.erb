@@ -1,0 +1,23 @@
+<div class="card-white-list">
+  <h2><em><%= @task.title %></em></h2>
+
+  <div class="details">
+    <p><strong><%= @task.details %></strong></p>
+  </div>
+
+  <div class="completed">
+    <input type="checkbox" name="<% @task.title %>" <%= @task.completed ? "checked" : "" %>>
+    <% if @task.completed %>
+      <label for="<% @task.title %>">This task is completed</label>
+    <% else %>
+      <label for="<% @task.title %>">This task is not completed yet</label>
+    <% end %>
+  </div>
+
+  <div>
+    <%= link_to 'Modifier cette tâche', edit_path %>
+  </div>
+
+  <p class="redirect"><%= link_to 'Back to list', tasks_path %></p>
+</div>
+
